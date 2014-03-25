@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="250px" height="255px" viewBox="0 0 250 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>miso</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M102.77538,67 L30.0005468,67 C13.4317023,67 0,80.4262158 0,96.9970399 L0,255 L250,255 L250,96.9970399 C250,80.4301322 236.558914,67 219.999453,67 L145.385483,67 L145.385483,67 L166.561782,19.4372522 C169.483923,12.8740172 166.537121,5.18677744 159.976695,2.26588757 C153.417711,-0.654360215 145.730061,2.30263853 142.809601,8.86209949 L124.14103,50.7923958 L106.348375,8.87552817 C103.541224,2.26229437 95.9094186,-0.825236001 89.2990152,1.98071378 C82.6900649,4.78604675 79.609712,12.4251065 82.415249,19.0345375 L102.77538,67 Z M43,109 L43,214 L207,214 L207,109 L43,109 Z M43,109" id="Rectangle-3" opacity="0.5" fill="#000000" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

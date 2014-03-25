@@ -1,0 +1,56 @@
+$serif: "skolar";
+$sans: "raleway";
+$c: "cubano";
+
+$salmon: #FC5B56;
+$light-grey: #ededed;
+$grey: #bbb;
+$dark-grey: #444;
+$midnight: #030539;
+
+$midnight: #030539;
+
+.writing {
+	padding: 15px;
+	padding-top: 0;
+	color: $midnight;
+	
+	h3 {
+		font-family: $c;
+		font-size: 1.2em;
+		letter-spacing: .2em;
+		padding-bottom: 8px;
+		border-bottom: 4px solid;
+	}
+	
+	.said {
+		padding-top: 20px;
+		padding-bottom: 17px;
+		border-bottom: 1px solid $midnight;
+	
+		p {
+			font-family: $serif;
+			font-size: 1.2em;
+			margin-top: -3px;
+			margin-bottom: 3px;
+			
+			a {
+				text-decoration: none;
+				color: $light-grey;
+			}
+		}
+	
+		.texticon {
+			border: 2px solid black;
+			opacity: .25;
+			border-radius: 6px;
+			height: 16px;
+			padding: 5px;
+			margin-top: -7px;
+			margin-right: 12px;
+			margin-bottom: 16px;
+			float: left;
+		}
+	}
+}
+

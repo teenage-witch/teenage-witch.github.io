@@ -1,0 +1,128 @@
+@import "reset";
+@import "bourbon/bourbon";
+@import "work";
+@import "writing";
+@import "scale";
+
+// Variables
+
+$salmon: #FC5B56;
+$light-grey: #ededed;
+$grey: #bbb;
+$dark-grey: #444;
+$midnight: #030539;
+
+$serif: "skolar";
+$sans: "raleway";
+$c: "cubano";
+
+// Let's Do This, Smang It
+
+body {
+	font-family: $serif;
+	background-color: $salmon;
+}
+
+.content {
+	margin: auto;
+	padding: 30px;
+	max-width: 1024px;
+	}
+	
+header {
+		
+	.social {
+		text-align: center;
+		margin-bottom: 20px;
+		
+		.fa-stack-1x {
+			color: $grey;
+			padding-left: 3px;
+			padding-top: 3px;
+		}
+		
+		.fa-stack-2x {
+			color: $light-grey;
+			border: 2px solid $grey;
+			border-radius: 50%;
+		}
+		
+		.fa-stack {
+			margin: 5px;
+		}
+	}
+}
+
+.container {
+	margin-top: 32px;
+}
+
+footer {
+	background-color: $light-grey;
+	padding: 30px;
+	
+	h4 {
+		margin: 0;
+	}
+	
+	h5 {
+		font-family: $c;
+		font-size: .75em;
+		padding: 15px;
+		color: $salmon;
+	}
+	
+	p {
+		padding: 15px;
+		padding-top: 0px;
+		
+		a {
+		font-family: $c;
+		font-size: .75em;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		margin: auto;
+		color: $midnight;
+		padding: 6px;
+		margin-right: 10px;
+		background: rgba(white, 0.75);
+		border-radius: 3px;
+		text-decoration: none;
+		line-height: 3em;
+		}
+	}
+}
+
+h1 {
+	font-size: 20em;
+	text-align: center;
+	font-family: $c;
+	color: $midnight;
+	margin-bottom: 2px;
+	margin-top: -20px;
+}
+
+h2 {
+	font-family: $c;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: $midnight;
+	text-align: center;
+	letter-spacing: .2em;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-family: $serif;
+	font-size: 1.35em;
+	padding: 15px;
+	margin-top: 20px;
+	color: $midnight;
+	line-height: 1.35em;
+	
+	a {
+		text-decoration: none;
+		color: $light-grey;
+	}
+}
+

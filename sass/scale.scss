@@ -1,0 +1,58 @@
+$iphone: 481px;
+$ipad: 769px;
+
+@media screen and (min-width: $iphone) {
+	
+	.work {
+		width: 44%;
+		float: left;
+	}
+	
+	.writing {
+		width: 44%;
+		float: right;
+	}
+	
+	footer {
+		clear: both;
+	}
+}
+
+@media screen and (min-width: $ipad) {
+
+	header {
+		
+		.name {
+			width: 28%;
+			margin-left: -20px;
+			margin-right: 10px;
+			float: left;
+		}
+		
+		h4 {
+			padding-top: 50px;
+		}
+	}
+
+	.content {
+		clear: both;
+	}
+		
+	.work {
+		padding: 0;
+		width: 33%;
+		float: left;
+		margin-bottom: 60px;
+	}
+	
+	.writing {
+		width: 33%;
+		float: right;
+	}
+	
+	footer {
+		margin-top: 100px;
+		clear: both;
+	}
+
+}

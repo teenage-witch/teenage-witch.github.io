@@ -1,0 +1,44 @@
+/* line 13, ../sass/writing.scss */
+.writing {
+  padding: 15px;
+  padding-top: 0;
+  color: #030539;
+}
+/* line 18, ../sass/writing.scss */
+.writing h3 {
+  font-family: "cubano";
+  font-size: 1.2em;
+  letter-spacing: .2em;
+  padding-bottom: 8px;
+  border-bottom: 4px solid;
+}
+/* line 26, ../sass/writing.scss */
+.writing .said {
+  padding-top: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #030539;
+}
+/* line 31, ../sass/writing.scss */
+.writing .said p {
+  font-family: "skolar";
+  font-size: 1.2em;
+  margin-top: -3px;
+  margin-bottom: 3px;
+}
+/* line 37, ../sass/writing.scss */
+.writing .said p a {
+  text-decoration: none;
+  color: #ededed;
+}
+/* line 43, ../sass/writing.scss */
+.writing .said .texticon {
+  border: 2px solid black;
+  opacity: .25;
+  border-radius: 6px;
+  height: 16px;
+  padding: 5px;
+  margin-top: -7px;
+  margin-right: 12px;
+  margin-bottom: 16px;
+  float: left;
+}

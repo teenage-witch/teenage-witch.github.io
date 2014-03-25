@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 7, ../sass/work.scss */
+.work {
+  padding: 15px;
+  padding-top: 0;
+  margin-bottom: 30px;
+  color: #030539;
+}
+/* line 13, ../sass/work.scss */
+.work h3 {
+  font-family: "cubano";
+  font-size: 1.2em;
+  letter-spacing: .2em;
+  padding-bottom: 8px;
+  border-bottom: 4px solid;
+}
+/* line 21, ../sass/work.scss */
+.work .miso {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #030539;
+}
+/* line 26, ../sass/work.scss */
+.work .miso .meta {
+  padding-top: 6px;
+}
+/* line 30, ../sass/work.scss */
+.work .miso a {
+  text-decoration: none;
+}
+/* line 33, ../sass/work.scss */
+.work .miso a .misoapp {
+  height: 34px;
+  padding: 16px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  margin-right: 12px;
+  background: rgba(3, 5, 57, 0.25);
+  border-radius: 16px;
+  margin-bottom: 18px;
+  float: left;
+}
+/* line 44, ../sass/work.scss */
+.work .miso a .veoapp {
+  height: 38px;
+  padding: 21px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-right: 12px;
+  background: rgba(3, 5, 57, 0.25);
+  border-radius: 16px;
+  margin-bottom: 16px;
+  float: left;
+}
+/* line 55, ../sass/work.scss */
+.work .miso a .weaveapp {
+  height: 32px;
+  padding: 13px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-right: 12px;
+  background: rgba(3, 5, 57, 0.25);
+  border-radius: 16px;
+  margin-bottom: 16px;
+  float: left;
+}
+/* line 66, ../sass/work.scss */
+.work .miso a .venmoapp {
+  height: 34px;
+  padding: 16px;
+  margin-right: 12px;
+  background: rgba(3, 5, 57, 0.25);
+  margin-bottom: 18px;
+  float: left;
+}
+
+/* line 78, ../sass/work.scss */
+h5 {
+  font-size: 1em;
+  padding-bottom: 12px;
+}
+
+/* line 83, ../sass/work.scss */
+h6 {
+  margin-bottom: 14px;
+  font-family: "cubano";
+  color: rgba(3, 5, 57, 0.5);
+}
+/* line 88, ../sass/work.scss */
+h6 a {
+  font-family: "cubano";
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin: auto;
+  color: #030539;
+  padding: 6px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+/* line 103, ../sass/work.scss */
+h7 {
+  font-size: .8em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 13, ../sass/writing.scss */
+.writing {
+  padding: 15px;
+  padding-top: 0;
+  color: #030539;
+}
+/* line 18, ../sass/writing.scss */
+.writing h3 {
+  font-family: "cubano";
+  font-size: 1.2em;
+  letter-spacing: .2em;
+  padding-bottom: 8px;
+  border-bottom: 4px solid;
+}
+/* line 26, ../sass/writing.scss */
+.writing .said {
+  padding-top: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #030539;
+}
+/* line 31, ../sass/writing.scss */
+.writing .said p {
+  font-family: "skolar";
+  font-size: 1.2em;
+  margin-top: -3px;
+  margin-bottom: 3px;
+}
+/* line 37, ../sass/writing.scss */
+.writing .said p a {
+  text-decoration: none;
+  color: #ededed;
+}
+/* line 43, ../sass/writing.scss */
+.writing .said .texticon {
+  border: 2px solid black;
+  opacity: .25;
+  border-radius: 6px;
+  height: 16px;
+  padding: 5px;
+  margin-top: -7px;
+  margin-right: 12px;
+  margin-bottom: 16px;
+  float: left;
+}
+
+@media screen and (min-width: 481px) {
+  /* line 6, ../sass/scale.scss */
+  .work {
+    width: 44%;
+    float: left;
+  }
+
+  /* line 11, ../sass/scale.scss */
+  .writing {
+    width: 44%;
+    float: right;
+  }
+
+  /* line 16, ../sass/scale.scss */
+  footer {
+    clear: both;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 25, ../sass/scale.scss */
+  header .name {
+    width: 28%;
+    margin-left: -20px;
+    margin-right: 10px;
+    float: left;
+  }
+  /* line 32, ../sass/scale.scss */
+  header h4 {
+    padding-top: 50px;
+  }
+
+  /* line 37, ../sass/scale.scss */
+  .content {
+    clear: both;
+  }
+
+  /* line 41, ../sass/scale.scss */
+  .work {
+    padding: 0;
+    width: 33%;
+    float: left;
+    margin-bottom: 60px;
+  }
+
+  /* line 48, ../sass/scale.scss */
+  .writing {
+    width: 33%;
+    float: right;
+  }
+
+  /* line 53, ../sass/scale.scss */
+  footer {
+    margin-top: 100px;
+    clear: both;
+  }
+}
+/* line 21, ../sass/style.scss */
+body {
+  font-family: "skolar";
+  background-color: #fc5b56;
+}
+
+/* line 26, ../sass/style.scss */
+.content {
+  margin: auto;
+  padding: 30px;
+  max-width: 1024px;
+}
+
+/* line 34, ../sass/style.scss */
+header .social {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 38, ../sass/style.scss */
+header .social .fa-stack-1x {
+  color: #bbbbbb;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+/* line 44, ../sass/style.scss */
+header .social .fa-stack-2x {
+  color: #ededed;
+  border: 2px solid #bbbbbb;
+  border-radius: 50%;
+}
+/* line 50, ../sass/style.scss */
+header .social .fa-stack {
+  margin: 5px;
+}
+
+/* line 56, ../sass/style.scss */
+.container {
+  margin-top: 32px;
+}
+
+/* line 60, ../sass/style.scss */
+footer {
+  background-color: #ededed;
+  padding: 30px;
+}
+/* line 64, ../sass/style.scss */
+footer h4 {
+  margin: 0;
+}
+/* line 68, ../sass/style.scss */
+footer h5 {
+  font-family: "cubano";
+  font-size: .75em;
+  padding: 15px;
+  color: #fc5b56;
+}
+/* line 75, ../sass/style.scss */
+footer p {
+  padding: 15px;
+  padding-top: 0px;
+}
+/* line 79, ../sass/style.scss */
+footer p a {
+  font-family: "cubano";
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin: auto;
+  color: #030539;
+  padding: 6px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 3px;
+  text-decoration: none;
+  line-height: 3em;
+}
+
+/* line 96, ../sass/style.scss */
+h1 {
+  font-size: 20em;
+  text-align: center;
+  font-family: "cubano";
+  color: #030539;
+  margin-bottom: 2px;
+  margin-top: -20px;
+}
+
+/* line 105, ../sass/style.scss */
+h2 {
+  font-family: "cubano";
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #030539;
+  text-align: center;
+  letter-spacing: .2em;
+  margin-bottom: 10px;
+}
+
+/* line 115, ../sass/style.scss */
+h4 {
+  font-family: "skolar";
+  font-size: 1.35em;
+  padding: 15px;
+  margin-top: 20px;
+  color: #030539;
+  line-height: 1.35em;
+}
+/* line 123, ../sass/style.scss */
+h4 a {
+  text-decoration: none;
+  color: #ededed;
+}

@@ -1,0 +1,56 @@
+@media screen and (min-width: 481px) {
+  /* line 6, ../sass/scale.scss */
+  .work {
+    width: 44%;
+    float: left;
+  }
+
+  /* line 11, ../sass/scale.scss */
+  .writing {
+    width: 44%;
+    float: right;
+  }
+
+  /* line 16, ../sass/scale.scss */
+  footer {
+    clear: both;
+  }
+}
+@media screen and (min-width: 769px) {
+  /* line 25, ../sass/scale.scss */
+  header .name {
+    width: 28%;
+    margin-left: -20px;
+    margin-right: 10px;
+    float: left;
+  }
+  /* line 32, ../sass/scale.scss */
+  header h4 {
+    padding-top: 50px;
+  }
+
+  /* line 37, ../sass/scale.scss */
+  .content {
+    clear: both;
+  }
+
+  /* line 41, ../sass/scale.scss */
+  .work {
+    padding: 0;
+    width: 33%;
+    float: left;
+    margin-bottom: 60px;
+  }
+
+  /* line 48, ../sass/scale.scss */
+  .writing {
+    width: 33%;
+    float: right;
+  }
+
+  /* line 53, ../sass/scale.scss */
+  footer {
+    margin-top: 100px;
+    clear: both;
+  }
+}

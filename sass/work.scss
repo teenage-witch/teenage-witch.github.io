@@ -1,0 +1,113 @@
+$serif: "skolar";
+$sans: "raleway";
+$c: "cubano";
+
+$midnight: #030539;
+
+.work {
+	padding: 15px;
+	padding-top: 0;
+	margin-bottom: 30px;
+	color: $midnight;
+	
+	h3 {
+		font-family: $c;
+		font-size: 1.2em;
+		letter-spacing: .2em;
+		padding-bottom: 8px;
+		border-bottom: 4px solid;
+	}
+	
+	.miso {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $midnight;
+		
+		.meta {
+			padding-top: 6px;
+		}
+		
+		a {
+			text-decoration: none;
+					
+			.misoapp {
+				height: 34px;
+				padding: 16px;
+				padding-top: 14px;
+				padding-bottom: 18px;
+				margin-right: 12px;
+				background: rgba($midnight, 0.25);
+				border-radius: 16px;
+				margin-bottom: 18px;
+				float: left;
+			}
+			.veoapp {
+				height: 38px;
+				padding: 21px;
+				padding-top: 14px;
+				padding-bottom: 14px;
+				margin-right: 12px;
+				background: rgba($midnight, 0.25);
+				border-radius: 16px;
+				margin-bottom: 16px;
+				float: left;
+			}
+			.weaveapp {
+				height: 32px;
+				padding: 13px;
+				padding-top: 17px;
+				padding-bottom: 17px;
+				margin-right: 12px;
+				background: rgba($midnight, 0.25);
+				border-radius: 16px;
+				margin-bottom: 16px;
+				float: left;
+			}
+			.venmoapp {
+				height: 34px;
+				padding: 16px;
+				margin-right: 12px;
+				background: rgba($midnight, 0.25);
+				margin-bottom: 18px;
+				float: left;
+			}
+		}
+	}
+}
+
+h5 {
+	font-size: 1em;
+	padding-bottom: 12px;
+}
+
+h6 {
+	margin-bottom: 14px;
+	font-family: $c;
+	color: rgba($midnight, .5);
+	
+	a {
+	font-family: $c;
+	font-size: .75em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin: auto;
+	color: $midnight;
+	padding: 6px;
+	margin-right: 10px;
+	background: rgba(white, 0.75);
+	border-radius: 3px;
+	text-decoration: none;
+	}
+}
+
+h7 {
+	font-size: .8em;
+	color: rgba(black, 0.5);
+}
+//.button {
+//	height: 66px;
+//	width: 66px;
+//	margin: auto;
+//	background: rgba(black, 0.35);
+//	border-radius: 16px;
+//}
