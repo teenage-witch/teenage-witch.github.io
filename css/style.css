@@ -126,19 +126,19 @@ table {
   float: left;
 }
 
-/* line 78, ../sass/work.scss */
+/* line 79, ../sass/work.scss */
 h5 {
   font-size: 1em;
   padding-bottom: 12px;
 }
 
-/* line 83, ../sass/work.scss */
+/* line 84, ../sass/work.scss */
 h6 {
   margin-bottom: 14px;
   font-family: "cubano";
   color: rgba(3, 5, 57, 0.5);
 }
-/* line 88, ../sass/work.scss */
+/* line 89, ../sass/work.scss */
 h6 a {
   font-family: "cubano";
   font-size: .75em;
@@ -153,19 +153,37 @@ h6 a {
   text-decoration: none;
 }
 
-/* line 103, ../sass/work.scss */
+/* line 104, ../sass/work.scss */
 h7 {
   font-size: .8em;
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* line 110, ../sass/work.scss */
+.memo p {
+  margin-top: 50px;
+  line-height: 1.4em;
+}
+/* line 115, ../sass/work.scss */
+.memo .fa {
+  margin-top: 10px;
+  margin-left: -10px;
+  color: rgba(0, 0, 0, 0.25);
+}
+/* line 121, ../sass/work.scss */
+.memo a.quora {
+  margin-top: 20px;
+  color: green;
+}
+
 /* line 13, ../sass/writing.scss */
 .writing {
+  margin-bottom: 40px;
   padding: 15px;
   padding-top: 0;
   color: #030539;
 }
-/* line 18, ../sass/writing.scss */
+/* line 19, ../sass/writing.scss */
 .writing h3 {
   font-family: "cubano";
   font-size: 1.2em;
@@ -173,155 +191,223 @@ h7 {
   padding-bottom: 8px;
   border-bottom: 4px solid;
 }
-/* line 26, ../sass/writing.scss */
+/* line 27, ../sass/writing.scss */
 .writing .said {
   padding-top: 20px;
   padding-bottom: 17px;
   border-bottom: 1px solid #030539;
 }
-/* line 31, ../sass/writing.scss */
+/* line 32, ../sass/writing.scss */
 .writing .said p {
   font-family: "skolar";
   font-size: 1.2em;
   margin-top: -3px;
   margin-bottom: 3px;
 }
-/* line 37, ../sass/writing.scss */
+/* line 38, ../sass/writing.scss */
 .writing .said p a {
   text-decoration: none;
   color: #ededed;
+  line-height: 1.2em;
 }
-/* line 43, ../sass/writing.scss */
+/* line 45, ../sass/writing.scss */
 .writing .said .texticon {
-  border: 2px solid black;
+  border: 2px solid #030539;
   opacity: .25;
   border-radius: 6px;
   height: 16px;
   padding: 5px;
-  margin-top: -7px;
+  margin-top: -5px;
   margin-right: 12px;
   margin-bottom: 16px;
   float: left;
+  transition: opacity .5s ease;
+}
+/* line 58, ../sass/writing.scss */
+.writing .said .texticon:hover {
+  opacity: .5;
+}
+/* line 62, ../sass/writing.scss */
+.writing .said .fa {
+  opacity: .25;
+  color: black;
+  padding: 5px;
+  margin-top: -10px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  transition: opacity .5s ease;
+  float: left;
+}
+/* line 73, ../sass/writing.scss */
+.writing .said .fa:hover {
+  opacity: .5;
 }
 
-@media screen and (min-width: 481px) {
-  /* line 6, ../sass/scale.scss */
-  .work {
-    width: 44%;
+@media screen and (max-width: 481px) {
+  /* line 5, ../sass/scale.scss */
+  .social {
     float: left;
+    margin-bottom: 20px;
+    margin-top: -26px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  /* line 14, ../sass/scale.scss */
+  .writing {
+    width: 100%;
+    margin-right: 10px;
   }
 
-  /* line 11, ../sass/scale.scss */
-  .writing {
-    width: 44%;
+  /* line 19, ../sass/scale.scss */
+  .content {
+    clear: both;
+  }
+
+  /* line 23, ../sass/scale.scss */
+  .social {
     float: right;
   }
 
-  /* line 16, ../sass/scale.scss */
+  /* line 27, ../sass/scale.scss */
   footer {
     clear: both;
   }
 }
 @media screen and (min-width: 769px) {
-  /* line 25, ../sass/scale.scss */
+  /* line 36, ../sass/scale.scss */
   header .name {
-    width: 28%;
-    margin-left: -20px;
+    width: 100%;
     margin-right: 10px;
-    float: left;
-  }
-  /* line 32, ../sass/scale.scss */
-  header h4 {
-    padding-top: 50px;
   }
 
-  /* line 37, ../sass/scale.scss */
+  /* line 43, ../sass/scale.scss */
   .content {
     clear: both;
   }
 
-  /* line 41, ../sass/scale.scss */
-  .work {
-    padding: 0;
-    width: 33%;
-    float: left;
-    margin-bottom: 60px;
-  }
-
-  /* line 48, ../sass/scale.scss */
-  .writing {
-    width: 33%;
+  /* line 47, ../sass/scale.scss */
+  .social {
     float: right;
   }
 
-  /* line 53, ../sass/scale.scss */
+  /* line 51, ../sass/scale.scss */
   footer {
-    margin-top: 100px;
     clear: both;
   }
 }
-/* line 21, ../sass/style.scss */
-body {
-  font-family: "skolar";
-  background-color: #fc5b56;
+/* line 1, ../sass/social.scss */
+.fa {
+  color: black;
+  opacity: .25;
+  transition: color .8s ease, font-size .2s linear;
 }
 
-/* line 26, ../sass/style.scss */
+/*a.svg {
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+}
+
+a.svg:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}*/
+/* line 22, ../sass/social.scss */
+.quora {
+  width: 16px;
+  opacity: .25;
+  margin-bottom: -9px;
+  padding-left: 10px;
+  transition: color .8s ease, width .2s linear, opacity .2s linear;
+}
+/* line 28, ../sass/social.scss */
+.quora #path {
+  fill: black;
+  transition: fill .8s ease;
+}
+
+/* line 34, ../sass/social.scss */
+.quora:hover {
+  width: 20px;
+  opacity: 1;
+}
+/* line 38, ../sass/social.scss */
+.quora:hover #path {
+  fill: #ededed;
+}
+
+/* line 43, ../sass/social.scss */
+.fa-pinterest:hover, .fa-instagram:hover, .fa-dribbble:hover, .fa-twitter:hover {
+  color: #ededed;
+  font-size: 24px;
+  opacity: 1;
+}
+
+/* line 23, ../sass/style.scss */
+body {
+  font-family: "skolar";
+  background: #fc3f32;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fc3f32 0%, #ef285d 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc3f32), color-stop(100%, #ef285d));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fc3f32 0%, #ef285d 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fc3f32 0%, #ef285d 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fc3f32 0%, #ef285d 100%);
+  /* IE10+ */
+  background: linear, to bottom, #fc3f32 0%, #ef285d 100%;
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#ef285d',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 35, ../sass/style.scss */
 .content {
   margin: auto;
   padding: 30px;
-  max-width: 1024px;
+  max-width: 600px;
 }
 
-/* line 34, ../sass/style.scss */
-header .social {
-  text-align: center;
-  margin-bottom: 20px;
-}
-/* line 38, ../sass/style.scss */
-header .social .fa-stack-1x {
-  color: #bbbbbb;
-  padding-left: 3px;
-  padding-top: 3px;
-}
-/* line 44, ../sass/style.scss */
-header .social .fa-stack-2x {
-  color: #ededed;
-  border: 2px solid #bbbbbb;
-  border-radius: 50%;
-}
-/* line 50, ../sass/style.scss */
-header .social .fa-stack {
-  margin: 5px;
-}
-
-/* line 56, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .container {
   margin-top: 32px;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
+header {
+  margin-bottom: 20px;
+}
+
+/* line 49, ../sass/style.scss */
 footer {
+  text-align: center;
   background-color: #ededed;
   padding: 30px;
 }
-/* line 64, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 footer h4 {
   margin: 0;
 }
-/* line 68, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 footer h5 {
   font-family: "cubano";
   font-size: .75em;
   padding: 15px;
-  color: #fc5b56;
+  color: #ef285d;
 }
-/* line 75, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 footer p {
   padding: 15px;
-  padding-top: 0px;
+  clear: both;
 }
-/* line 79, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 footer p a {
   font-family: "cubano";
   font-size: .75em;
@@ -335,9 +421,16 @@ footer p a {
   border-radius: 3px;
   text-decoration: none;
   line-height: 3em;
+  transition: color .5s ease, font-size .5s ease, padding .5s ease;
+}
+/* line 84, ../sass/style.scss */
+footer p a:hover {
+  color: #fc5b56;
+  padding: 8px;
+  font-size: 14px;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 h1 {
   font-size: 20em;
   text-align: center;
@@ -347,18 +440,20 @@ h1 {
   margin-top: -20px;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 h2 {
   font-family: "cubano";
   font-size: 1.2em;
   text-transform: uppercase;
   color: #030539;
-  text-align: center;
   letter-spacing: .2em;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  float: left;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 h4 {
   font-family: "skolar";
   font-size: 1.35em;
@@ -367,8 +462,13 @@ h4 {
   color: #030539;
   line-height: 1.35em;
 }
-/* line 123, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 h4 a {
   text-decoration: none;
   color: #ededed;
+}
+/* line 126, ../sass/style.scss */
+h4 p {
+  padding-bottom: 15px;
+  clear: both;
 }

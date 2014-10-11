@@ -11,6 +11,7 @@ $midnight: #030539;
 $midnight: #030539;
 
 .writing {
+	margin-bottom: 40px;
 	padding: 15px;
 	padding-top: 0;
 	color: $midnight;
@@ -37,20 +38,40 @@ $midnight: #030539;
 			a {
 				text-decoration: none;
 				color: $light-grey;
+				line-height: 1.2em;
 			}
 		}
 	
 		.texticon {
-			border: 2px solid black;
+			border: 2px solid $midnight;
 			opacity: .25;
 			border-radius: 6px;
 			height: 16px;
 			padding: 5px;
-			margin-top: -7px;
+			margin-top: -5px;
 			margin-right: 12px;
 			margin-bottom: 16px;
 			float: left;
+			transition: opacity .5s ease;
+		}
+		
+		.texticon:hover {
+			opacity: .5;
+		}
+				
+		.fa {
+			opacity: .25;
+			color: black;
+			padding: 5px;
+			margin-top: -10px;
+			margin-right: 12px;
+			margin-bottom: 20px;
+			transition: opacity .5s ease;
+			float: left;
+		}
+		
+		.fa:hover {
+			opacity: .5;
 		}
 	}
 }
-

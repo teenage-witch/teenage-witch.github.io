@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="79px" viewBox="0 0 42 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled 2</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <rect d="M21,0 C13.2680135,0 7,6.26090629 7,14.0047421 L7,41.9952579 C7,49.7298634 13.2663135,56 21,56 L21,56 C28.7319865,56 35,49.7390937 35,41.9952579 L35,14.0047421 C35,6.27013661 28.7336865,0 21,0 L21,0 Z M21,0" id="Rectangle-5" fill="#000000" sketch:type="MSShapeGroup" x="7" y="0" width="28" height="56" rx="40"></rect>
+        <path d="M19,62.9060613 C8.33933078,61.8995107 0,52.928373 0,42.0081365 L0,34 L3.55271368e-15,34 C3.55271368e-15,32.8954304 0.895430446,32 2,32 C3.10456955,32 4,32.8954304 4,34 L4,42.0081365 C4,51.3924836 11.6090949,59 21,59 C30.3888407,59 38,51.3893106 38,42.0081365 L38,34 C38,32.8954304 38.8954304,32 40,32 C41.1045696,32 42,32.8954304 42,34 L42,34.0000127 L42,42.0081365 C42,52.9255803 33.6587282,61.8989915 23,62.905999 L23,75 L19,75 L19,62.9060613 Z M11,75 C9.89543045,75 9,75.8954304 9,77 C9,78.1045696 9.89543045,79 11,79 L30.9999931,79 C32.1045696,79 33,78.1045696 33,77 C33,75.8954304 32.1045696,75 31,75 L11.0000029,75 L11,75 Z M11,75" id="Rectangle-5" fill="#000000" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

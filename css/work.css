@@ -73,19 +73,19 @@
   float: left;
 }
 
-/* line 78, ../sass/work.scss */
+/* line 79, ../sass/work.scss */
 h5 {
   font-size: 1em;
   padding-bottom: 12px;
 }
 
-/* line 83, ../sass/work.scss */
+/* line 84, ../sass/work.scss */
 h6 {
   margin-bottom: 14px;
   font-family: "cubano";
   color: rgba(3, 5, 57, 0.5);
 }
-/* line 88, ../sass/work.scss */
+/* line 89, ../sass/work.scss */
 h6 a {
   font-family: "cubano";
   font-size: .75em;
@@ -100,8 +100,25 @@ h6 a {
   text-decoration: none;
 }
 
-/* line 103, ../sass/work.scss */
+/* line 104, ../sass/work.scss */
 h7 {
   font-size: .8em;
   color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 110, ../sass/work.scss */
+.memo p {
+  margin-top: 50px;
+  line-height: 1.4em;
+}
+/* line 115, ../sass/work.scss */
+.memo .fa {
+  margin-top: 10px;
+  margin-left: -10px;
+  color: rgba(0, 0, 0, 0.25);
+}
+/* line 121, ../sass/work.scss */
+.memo a.quora {
+  margin-top: 20px;
+  color: green;
 }

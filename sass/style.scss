@@ -3,6 +3,7 @@
 @import "work";
 @import "writing";
 @import "scale";
+@import "social";
 
 // Variables
 
@@ -11,6 +12,7 @@ $light-grey: #ededed;
 $grey: #bbb;
 $dark-grey: #444;
 $midnight: #030539;
+$hotpink: #ef285d;
 
 $serif: "skolar";
 $sans: "raleway";
@@ -20,44 +22,32 @@ $c: "cubano";
 
 body {
 	font-family: $serif;
-	background-color: $salmon;
+	background: #fc3f32; /* Old browsers */
+	background: -moz-linear-gradient(top, #fc3f32 0%, #ef285d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fc3f32), color-stop(100%,#ef285d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fc3f32 0%,#ef285d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fc3f32 0%,#ef285d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fc3f32 0%,#ef285d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fc3f32 0%,#ef285d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc3f32', endColorstr='#ef285d',GradientType=0 ); /* IE6-9 */
 }
 
 .content {
 	margin: auto;
 	padding: 30px;
-	max-width: 1024px;
+	max-width: 600px;
 	}
 	
-header {
-		
-	.social {
-		text-align: center;
-		margin-bottom: 20px;
-		
-		.fa-stack-1x {
-			color: $grey;
-			padding-left: 3px;
-			padding-top: 3px;
-		}
-		
-		.fa-stack-2x {
-			color: $light-grey;
-			border: 2px solid $grey;
-			border-radius: 50%;
-		}
-		
-		.fa-stack {
-			margin: 5px;
-		}
-	}
-}
-
 .container {
 	margin-top: 32px;
 }
 
+header {
+	margin-bottom: 20px;
+}
+
 footer {
+	text-align: center;
 	background-color: $light-grey;
 	padding: 30px;
 	
@@ -69,12 +59,12 @@ footer {
 		font-family: $c;
 		font-size: .75em;
 		padding: 15px;
-		color: $salmon;
+		color: $hotpink;
 	}
 	
 	p {
 		padding: 15px;
-		padding-top: 0px;
+		clear: both;
 		
 		a {
 		font-family: $c;
@@ -89,7 +79,13 @@ footer {
 		border-radius: 3px;
 		text-decoration: none;
 		line-height: 3em;
+		transition: color .5s ease, font-size .5s ease, padding .5s ease;
 		}
+	a:hover {
+		color: $salmon;
+		padding: 8px;
+		font-size: 14px;
+	}
 	}
 }
 
@@ -107,9 +103,11 @@ h2 {
 	font-size: 1.2em;
 	text-transform: uppercase;
 	color: $midnight;
-	text-align: center;
 	letter-spacing: .2em;
-	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	float: left;
 }
 
 h4 {
@@ -123,6 +121,11 @@ h4 {
 	a {
 		text-decoration: none;
 		color: $light-grey;
+	}
+	
+	p {
+		padding-bottom: 15px;
+		clear: both;
 	}
 }
 

@@ -75,6 +75,7 @@ $midnight: #030539;
 	}
 }
 
+
 h5 {
 	font-size: 1em;
 	padding-bottom: 12px;
@@ -103,6 +104,24 @@ h6 {
 h7 {
 	font-size: .8em;
 	color: rgba(black, 0.5);
+}
+
+.memo {
+	p {
+		margin-top: 50px;
+		line-height: 1.4em;
+	}
+	
+	.fa {
+		margin-top: 10px;
+		margin-left: -10px;
+		color: rgba(black, 0.25);
+	}
+	
+	a.quora {
+		margin-top: 20px;
+		color: green;
+	}
 }
 //.button {
 //	height: 66px;

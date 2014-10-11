@@ -1,0 +1,48 @@
+.fa {
+	color: black;
+	opacity: .25;
+	transition: color .8s ease, font-size .2s linear;
+}
+
+/*a.svg {
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+}
+
+a.svg:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}*/
+
+.quora {
+	width: 16px;
+	opacity: .25;
+	margin-bottom: -9px;
+	padding-left: 10px;
+	transition: color .8s ease, width .2s linear, opacity .2s linear;
+		#path {
+			fill: black;
+			transition: fill .8s ease;
+		}
+}
+
+.quora:hover {
+	width: 20px;
+	opacity: 1;
+	
+	#path {
+		fill: $light-grey;
+	}
+}
+
+.fa-pinterest:hover, .fa-instagram:hover, .fa-dribbble:hover, .fa-twitter:hover, {
+	color: $light-grey;
+	font-size: 24px;
+	opacity: 1;
+}
+
