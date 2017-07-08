@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      Sabrina Majeed
+    </title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="Salome-Complete-Webfont/Salome-Italic-Webfont/stylesheet.css">
+    <link rel="stylesheet" href="Salome-Complete-Webfont/Salome-Stencil-Regular-Webfont/stylesheet.css">
+    <link rel="stylesheet" href="Salome-Complete-Webfont/Salome-Regular-Webfont/stylesheet.css">
+
+</head>
+<body class="helvetica blue center-ns w-two-thirds-ns">
+
+<!--<div>
+Placeholder for Nav
+</div>-->
+
+<div class="tc tl-ns ml4-ns">
+<h1 class="f1 mb0 mt5-ns" style="font-family: 'salomeitalic'">Designing at BuzzFeed</h1>
+<p class="b">2013—2015</p>
+</div>
+
+<p class="f5 lh-title lh-copy-ns ma4">I joined BuzzFeed as a designer on our Apps team and worked exclusively on our flagship iOS app. During this time the Apps team didn’t have a dedicated Product Manager, but we did have a fantastic VP of Mobile Engineering and were starting to staff up on full-time iOS and Android developers. This meant that our strategy and priorities were mostly engineering driven.</p>
+
+<p class="f4 b mh4 ttu tracked-mega light-blue" style="font-family: 'salomeregular'">Refactor/Redesign</p>
+
+<p class="f5 lh-title lh-copy-ns mh4">The first major priority for our team was a refactor of the entire iOS app— a part of which involved rewriting several of our web-views as native views from scratch. The instability and slow content loading times of our web-views made this refactor a necessary step to take before introducing any new features into the app. The refactor also presented an opportunity for me to redesign existing features in tandem as engineering was rebuilding them.</p>
+
+<!--Splash-->
+
+<p class="b mh4 mt4">The Splash</p>
+<p class="f5 lh-title lh-copy-ns mh4 mb4-ns">The splash unit is an editorially curated promotional unit located at the top of our homepage as well as every vertical feed. The original design of our mobile Splash unit was a miniature replica of the desktop splash unit, which utilized a “wide format” thumbnail and allowed our homepage curators to style headlines in either black on white, or white on black, with the option of adding a transparency. While the wide format worked thumbnail worked well on desktop, on our mobile apps it appeared relatively small and close in hierarchy to the individual feed cells below it. The app also featured a carousel of three additional splash stories but data showed diminishing returns on the extra items in the carousel, so we decided to nix the additional stories.</P>
+<img class="mt2" src="images/buzzfeeddesign/splash1.png">
+<p class="tc f6 ma0">Old Splash vs. Splash 2.0</p>
+<p class="mh4 mt3 ma4-ns lh-title lh-copy-ns">Around the same time we launched the redesigned Splash we also reversed the header colors of the iOS app to be more neutral against various content types and as an aesthetic update in line with iOS7.</P>
+<img class="mt2" src="images/buzzfeeddesign/splash2.png">
+<p class="tc f6 ma0 pt2">Early Explorations</p>
+<p class="mh4 lh-title lh-copy-ns mt3 mt4-ns">One of the biggest challenges in designing the Splash unit was creating a lock-up that would work well for both News and Entertainment stories, since at this time we had not yet developed a unique visual style for our News content. I explored various lock-ups on a variety of content types. In the end I convinced our editorial and product teams to allow us to use our ‘big thumbnail’ format (previously a format only used on Desktop feeds) instead of the ‘wide thumbnail’ to afford the Splash unit more hierarchy on mobile, and also allow the selected imagery to communicate the tone of the story while the text remained neutral. We kept the text background color as a tool for affordability and visual cue that the unit is actionable. Although on Desktop editors could set their transparency on a sliding scale, for simplicity’s sake on the Apps we translated any percentage of transparency under 100 on Desktop to equate to 60% transparency. </p>
+<img class="mt2" src="images/buzzfeeddesign/splash4.png">
+<p class="tc f6 ma0 pt2">Mobile splash units for various content verticals adapted from their desktop counterparts.</p>
+
+<!--Commenting-->
+
+<p class="b mh4 mt4">Commenting</p>
+<p class="mh4 lh-title lh-copy-ns mb4-ns">Similar to the original Splash design, our original commenting experience in the iOS app was a minimized version of the desktop web commenting experience. The grey actions and iconography appeared disabled, had small hit targets, and inconsistent copy: in some places we referred to this experience as comments, in other as replies, and again in others as responses.</p>
+<img class="mt2" src="images/buzzfeeddesign/commenting1.png">
+<p class="tc f6 ma0">Typical comments on a News article, circa 2013</p>
+<p class="mh4 lh-title mt3 lh-copy-ns mv4-ns">I settled on calling the entire experience “Responses” to be consistent with the Desktop experience, and “Reply” for a sub-Response. I created two levels of hierarchy for the four actions associated with responses: making generous hit targets for the two more common actions (liking and disliking) and larger, more actionable looking text for the less common ones (replying and sharing, the latter of which we eventually removed). We also created a new default avatar that would appear more on-brand (originally a cat, later updated to our ambiguous person icon) than the generic greyed out avatar.</p>
+<img class="mt2" src="images/buzzfeeddesign/commenting2.png">
+<p class="mh4 lh-title mt3 lh-copy-ns mv4-ns">I also redesigned a native response composing flow and UI, to replace the original web view which forced users to add their comments in a non-expanding textbox.</p>
+
+<!--Reacting-->
+
+<p class="b mh4 mt4">Reacting</p>
+<p class="mh4 lh-title mt3 lh-copy-ns mb4-ns">BuzzFeed offers a light-weight way for users to interact with stories in Reactions. Reactions work with BuzzFeed’s infamous “badges” in that data from our reactions informs which stories end up in our badge feeds. In the original app experience for Reactions, the reactions were presented as rectangular boxes in a modal that was accessed from the footer. I thought there was an opportunity here to visually tie the reactions to our badges and also try a more elegant way of displaying all the different reactions. Honestly, this idea was kind of crazy and in retrospect I’m surprised we built it. It didn’t work towards any major business goal, but it was really fun to prototype.</p>
+<div class="tc"><img class="mt2" src="images/buzzfeeddesign/reactions.gif"></div>
+
+<p class="b mh4 mt4">Image Viewer</p>
+<p class="mh4 lh-title mt3 lh-copy-ns mb4-ns">As a part of the refactor I also worked on designs for a native image viewer in the iOS app. Previously, viewing an image in an article or list in the app had been a major pain point for users. Aside from loading in as a modal within the existing web-view, previewing an image took two extra taps because the initial tap revealed share options for that specific image (which often covered up parts of the image as well). In the native image viewer, tapping would bring up both the image preview AND the share options simultaneously. Additional use cases that had to be considered were supporting images with captions (common in news stories), credit information, photo-sets (in which multiple photos are attached to a single list item), and making sure that all the relevant metadata and actions displayed clearly on photos of varying backgrounds and proportions.</p>
+<div class="tc"><img class="mt2" src="images/buzzfeeddesign/imageviewer.gif"></div>
+
+
+<!--<p class="tc f4 b ma4 ttu tracked-mega light-blue" style="font-family: 'salomeregular'">Share Bar</p>-->
+
+<p class="f4 b mh4 mt4 ttu tracked-mega light-blue" style="font-family: 'salomeregular'">iOS Feature Launches</p>
+
+<p class="mh4 lh-title mt3 lh-copy-ns mb4-ns">Another facet of our strategy at this time was partnering closely with Apple on new iOS feature launches. As a launch partner, we were frequently promoted in the App Store which worked towards our goal at the time of driving user acquisition. Some of the features I worked on for these promotions included our “Today” extension and the first version of our Watch app.</p>
+<div class="tc fl w-100 w-third-ns"><img class="mt2" src="images/buzzfeeddesign/widget1.jpeg"></div>
+<div class="tc fl w-100 w-third-ns"><img class="mt2" src="images/buzzfeeddesign/polls1.gif"></div>
+<div class="tc fl w-100 w-third-ns"><img class="mt2" src="images/buzzfeeddesign/polls2.gif"></div>
+
+<p class="fl w-100 f4 b mh4 mt5-ns ttu tracked-mega light-blue" style="font-family: 'salomeregular'">Style Guides</p>
+
+<p class="fl w-100 mh4 lh-title mt3 mt0-ns lh-copy-ns mb4-ns">Around this time we had also started hiring more designers to work on apps, which prompted me to start documenting our design patterns and creating a style guide in Sketch. I also started to work on an Origami patch library for quickly prototyping in our iOS design language.
+</p>
+<img class="mt2" src="images/buzzfeeddesign/styleguide.png">
+
+<p class="f4 b mh4 mt4 ttu tracked-mega light-blue" style="font-family: 'salomeregular'">Looking Back</p>
+<p class="mh4 lh-title mt3 mb4">text goes here</p>
+</body>
+</html>
