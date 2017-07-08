@@ -19,158 +19,32 @@
   </head>
   <body class="helvetica blue">
 
-<!--Header-->
+    <SCRIPT>
+    function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password',' ');
+    while (testV < 3) {
+    if (!pass1)
+    history.go(-1);
+    if (pass1.toLowerCase() == "letmein") {
+    alert('You Got it Right!');
+    window.open('http://sabrinasans.github.io/buzzfeeddesign.html');
+    break;
+    }
+    testV+=1;
+    var pass1 =
+    prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+    }
+    if (pass1.toLowerCase()!="password" & testV ==3)
+    history.go(-1);
+    return " ";
+    }
+    </SCRIPT>
+    <CENTER>
+    <FORM>
+    <input type="button" value="Enter Protected Area" onClick="passWord()">
+    </FORM>
+    </CENTER>
 
-    <div class="bg-washed-red mw9 center ph6-ns tc">
-      <div class="cf ph2-ns">
-        <div class="tl-ns pl4-ns pt4-ns">
-            <p class="pl4-ns mt4 mb0"><p class="b f1 f2-ns mt0 mb3" style="font-family: 'salomeitalic'"><i class="em em-alien f5 f6-ns"></i><br>Sabrina<br class="rwd-break"> Majeed</p>
-        </div>
-        <div class="fl w-100 w-70-ns pa4-ns mb5-ns pa3">
-          <div>
-            <p class="b f4 f3-ns tl-ns lh-title mt0 mb3">Hello! I’m an independent product designer and advisor. Most recently, I designed apps and managed design teams at BuzzFeed and before that I designed apps for <a class="link dim blue" href="https://play.google.com/store/apps/details?id=com.venmo&hl=en">Venmo</a>, <a class="link dim blue" href="https://www.crunchbase.com/product/miso#/entity">Miso</a>, and <a class="link dim blue" href="https://beautifulpixels.com/iphone/weave-is-your-to-do-for-work-management/">Intuit</a>.</p>
-            <p class="b f4 f3-ns tl-ns lh-title mt0 mb4">I’m currently available for contract design work and management consulting.<p>
-            <p class="tl-ns"><a class="b f5 f4-ns grow no-underline br-pill ph4 pv3 mb0 dib white bg-blue" href="#0">Let's Work Together.</a></p>
-          </div>
-        </div>
-        <div class="fl w-100 w-30-ns pa3">
-          <div>
-            <ul class="list tc ph0 pl6-ns pr0-ns pv0 ma0">
-              <li class="mb2"><a class="link dim blue" href="#">Work</a></li>
-              <li class="mb2">&#12336&#12336&#12336&#12336&#12336</li>
-              <li class="mb2"><a class="link dim blue" href="#">Writing</a></li>
-              <li class="mb2">&#12336&#12336&#12336&#12336&#12336</li>
-              <li class="mb2"><a class="link dim blue" href="#">Speaking</a></li>
-              <li class="mb2">&#12336&#12336&#12336&#12336&#12336</li>
-              <li class="mb2"><a class="link dim blue" href="#">Resume</a></li>
-              <li class="mb2">&#12336&#12336&#12336&#12336&#12336</li>
-              <li class="mb2"><a class="link dim blue" href="#">Contact</a></li>
-              <li class="mb2">&#12336&#12336&#12336&#12336&#12336</li>
-              <li class="mb4"><a class="link dim blue" href="#">Etc...</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<!--End of Header-->
-
-<!--Work-->
-
-<div class="mw9 center ph6-ns mb2-ns">
-  <div class="cf ph2-ns">
-        <p class="tc f4 b ma4 ma5-ns ttu tracked-mega light-blue" style="font-family: 'salomeregular'">Work</p>
-<div class="ph3 pa0-ns">
-<div class="fl br2 dark-gray b--black-10 ma4 ma0-ns w-100 w-third-ns center">
-<div class="dt w-100 pa2 br2">
-<p style="font-family: 'salomeitalic'" class="f1 f2-ns mv0 tc blue b lh-solid">Building BuzzFeed</p>
-<p class="mv2 blue tc">&#12336&#12336&#12336</p>
-<p class="f5 blue b tl mb1 mt2 ml0 tc">2013 — 2017</p>
-</div>
-</div>
-</div>
-
-<div class="ph3 pa0-ns">
-<div class="fl br2 dark-gray b--black-10 ma4 ma0-ns w-100 w-third-ns center">
-<div class="dt w-100 pa2 br2">
-<p style="font-family: 'salomeitalic'" class="f1 f2-ns mv0 tc blue b lh-solid">360 Choose Your Own Adventure Video</p>
-<p class="mv2 blue tc">&#12336&#12336&#12336</p>
-<p class="f5 blue b tl mb1 mt2 ml0 tc">Hack Week 2016</p>
-</div>
-</div>
-</div>
-
-<div class="ph3 pa0-ns">
-<div class="fl br2 dark-gray b--black-10 ma4 ma0-ns w-100 w-third-ns center">
-<div class="dt w-100 pa2 br2">
-<p style="font-family: 'salomeitalic'" class="f1 f2-ns mv0 tc blue b lh-solid">The<br>Classics</p>
-<p class="mv2 blue tc">&#12336&#12336&#12336</p>
-<p class="f5 blue b tl mb1 mt2 ml0 tc">Pre-2013 Projects</p>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-  </div>
-</div>
-
-<!--End Work-->
-
-<!--Writing-->
-
-<div class="mw9 center ph6-ns">
-  <div class="cf ph2-ns">
-    <p class="tc f4 b ma4 ma5-ns mb0-ns ttu tracked-mega light-blue" style="font-family: 'salomeregular'">Writing</p>
-    <p class="f5 tc-ns lh-title ma4">I’ve been published in <a class="link dim blue" <a href="http://archive.offscreenmag.com/issue11/">Offscreen Magazine</a>, <a class="link dim blue" href="http://www.refinery29.com/techology-career-advice">Refinery29</a>, <a class="link dim blue" href="https://the-pastry-box-project.net/baker/sabrina-majeed">The Pastry Box Project</a>, and BuzzFeed. Here’s a selection of some of my favorite written projects:</p>
-    <div class="fl w-100 w-33-ns ml4 mb4-ns">
-      <ul class="list ph1 pv0 ma0 b">
-        <li class="mb4"><a class="link dim blue f5 lh-title pb0" href="https://tech.buzzfeed.com/crafting-the-product-design-hiring-experience-part-one-65c924bc7a41">Crafting the Product Design Hiring<br>Experience at BuzzFeed</a></li>
-        <li class="mb4"><a class="link dim blue f5" href="https://medium.com/on-products-pixels-1/exposure-vs-isolation-f997ad45b282">Exposure vs. Isolation</a></li>
-        <li class="mb4"><a class="link dim blue f5" href="http://www.aboutfeminism.me">AboutFeminism.Me</a></li>
-      </ul>
-    </div>
-    <div class="fl w-100 w-33-ns ml4 mb4-ns">
-      <ul class="list ph1 pv0 ma0 b">
-        <li class="mb4"><a class="link dim blue f5" href="https://tech.buzzfeed.com/crafting-the-product-design-hiring-experience-part-one-65c924bc7a41">BuzzFeed Editorial Residency</a></li>
-        <li class="mb4"><a class="link dim blue f5" href="https://tech.buzzfeed.com/crafting-the-product-design-hiring-experience-part-one-65c924bc7a41">25 Ways to Dress Like A Tech Employee</a></li>
-        <li class="mb4"><a class="link dim blue f5" href="https://tech.buzzfeed.com/crafting-the-product-design-hiring-experience-part-one-65c924bc7a41">Humans of BuzzFeed</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!--End Writing-->
-
-<!--Speaking-->
-
-<div class="mw9 center ph6-ns">
-  <div class="cf ph2-ns">
-    <p class="tc f4 b ma4 ma5-ns mb0-ns ttu tracked-mega light-blue" style="font-family: 'salomeregular'">Speaking</p>
-    <p class="f5 tc-ns lh-title ma4">I’ve spoken at conferences and events for <a class="link dim blue" <a href="https://generalassemb.ly/instructors/sabrina-majeed/1568">General Assembly</a>, SVA, The Flatiron School, AOL, Women Who Code, and <a class="link dim blue" href="https://www.youtube.com/watch?v=_x3RdD_z1D0">The NY Digital Product Design Meetup</a>. Here’s a selection of some of my favorite appearances:</p>
-    <div class="fl w-100 w-33-ns tc mb4-ns">
-      <ul class="list tc ph4 pv0 ma0">
-        <li class="mb4"><iframe src="https://www.youtube.com/embed/xrzB63nZq4k" frameborder="0" allowfullscreen></iframe><p class="f6 b">The Conference 2015</p></li>
-        <li class="mb4"><iframe src="https://www.youtube.com/embed/i5QpfZuSwq4" frameborder="0" allowfullscreen></iframe><p class="f6 b">Alicia Menendez Tonight</p></li>
-      </ul>
-    </div>
-    <div class="fl w-100 w-34-ns tc mb4-ns">
-      <ul class="list tc ph1 pv0 ma0">
-        <li class="mb4"><iframe src="https://player.vimeo.com/video/112520210" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p class="f6 b">Beyond The Code 2014</p></li>
-        <li class="mb4"><iframe src="https://player.vimeo.com/video/50952466" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p class="f6 b">MEX 2012</p></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!--End Speaking-->
-
-<!--ETC-->
-
-<div class="mw9 center ph3-ns">
-  <div class="cf ph2-ns">
-    <p class="tc f4 b ma4 ttu tracked-mega light-blue" style="font-family: 'salomeregular'">ETC</p>
-    <p class="f5 lh-title ma4">In my free time you can usually find me cooking, traveling, or playing Overwatch— where I'm currently maining Zenyatta and Symmetra.</p>
-    <div class="fl w-100 w-33-ns tc mb4-ns">
-      <ul class="list tc ph4 pv0 ma0">
-        <li class="mb4"></li>
-      </ul>
-    </div>
-    <div class="fl w-100 w-34-ns tc mb4">
-      <ul class="list tc ph1 pv0 ma0">
-        <li class="mb4 pa3 tc"><img src="https://s-media-cache-ak0.pinimg.com/originals/c8/8e/a7/c88ea72eb151c5ce295a8a00a6b8fa21.gif"></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!--end ETC-->
-
-<!--Footer-->
-<div class="bg-blue washed-red pa4">
-Footer
-</div>
-<!--end Footer -->
   </body>
 </html>
