@@ -3,3 +3,10 @@
   display: none;
 }
 }
+
+ @media screen and (min-width: 700px){
+.no-tracking
+{
+  letter-spacing: 0em;
+}
+}
