@@ -44,3 +44,32 @@ blockquote.twitter-tweet a:hover,
 blockquote.twitter-tweet a:focus {
   text-decoration: underline;
 }
+
+
+#instafeed a{
+  display: block;
+  float: left;
+  position: relative;
+  padding-right: 2em;
+  width: 50%;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #357EDD;
+  font-size: 12px;
+  }
+
+#instafeed .footer {
+  background-color: white;
+  margin-top: -11px;
+  z-index: 1;
+  padding: 12px;
+  padding-top: 20px;
+  border-radius: 0px 0px 4px 4px;
+
+}
+
+#instafeed img {
+  background-color: white;
+  border-radius: 4px 4px 0px 0px;
+  z-index: -1;
+}

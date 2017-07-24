@@ -18,8 +18,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
-  <script src="https://use.typekit.net/rgz7rrf.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <script src="js/instafeed.min.js"></script>
+  <script type="text/javascript">
+    var userFeed = new Instafeed({
+      get: 'user',
+      userId: '154074',
+      clientId: '997da6a332df4a00a64747be73bcae9a',
+      accessToken: '154074.997da6a.5b3de5be5e91497887fc918518f34f85',
+      resolution: 'standard_resolution',
+      template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}"/><div class="footer"><div class="caption">{{caption}}</div></div></a>',
+      sortBy: 'most-recent',
+      limit: 2,
+      links: false
+    });
+    userFeed.run();
+  </script>
+
+      <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-8181607-6', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 
   </head>
   <body class="helvetica blue bg-washed-red">
@@ -172,21 +197,17 @@
 
 <!--ETC-->
 
-<div class="mw9 center ph6-ns ph5-m">
+<div class="mw9 center ph6-ns ph5-m mb4 mb5-ns">
   <div class="ph4-l">
   <div class="cf ph2-ns ph0-m">
     <p class="tc tl-ns f3 f2-ns b ma4 ma5-ns ml0-ns mb0-ns blue" style="font-family: 'salomeitalic'">Extra Curriculars...</p>
     <p class="f5 f3-ns b-ns lh-title ma4 mh0-ns">In my free time you can usually find me cooking, traveling, or playing Overwatch— where I'm currently maining Zenyatta and Symmetra.</p>
-    <div class="fl w-100 w-33-ns tc mb4-ns">
-      <ul class="list tc ph4 pv0 ma0">
-        <li class="mb4"></li>
+
+        <ul class="list tc ph1 pv0 ma0">
+        <li class="fl w-100 w-50-ns tc pl4 pl0-ns"><div height="270" id="instafeed"></div></li>
+        <li class="fl w-100 w-50-ns"><img src="https://media.giphy.com/media/ft9QxShZRZEhW/giphy.gif"></li>
       </ul>
-    </div>
-    <div class="fl w-100 w-34-ns tc mb4">
-      <ul class="list tc ph1 pv0 ma0">
-        <li class="mb4 pa3 tc"><img src="https://media.giphy.com/media/ft9QxShZRZEhW/giphy.gif"></li>
-      </ul>
-    </div>
+
   </div>
 </div>
 </div>
@@ -198,10 +219,12 @@
 <div class="bg-blue fl w-100 ">
 <div class="washed-red pa4 p0-ns mh0-ns ph4-l">
     <div class="mw9 center ph6-ns ph5-m">
-<p class="f6">© Sabrina Majeed 2017</p>
-<p class="f6 b">This Site Was Made With</p>
+<p class="f6 b mb4">© Sabrina Majeed 2017</p>
+<p class="f6 mb0 pb0">This Site Was Made With</p>
 <p class="f6"><a class="link white bb b--red bw1 dim" href="http://tachyons.io/">tachyons.io</a>,
 <a class="link white bb b--red bw1 dim" href="https://afeld.github.io/emoji-css/">emoji.css</a>,
+<a class="link white bb b--red bw1 dim" href="https://daneden.github.io/animate.css/">animate.css</a>
+<a class="link white bb b--red bw1 dim" href="http://instafeedjs.com/">instafeed.js</a>,
 <a class="link white bb b--red bw1 dim" href="http://atipofoundry.com/fonts/salome">salome</a></p>
 
 </div>
