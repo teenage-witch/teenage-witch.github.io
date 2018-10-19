@@ -41,3 +41,11 @@ background-color: #F6E7DB;
 .min-height {
   min-height: 100%;
 }
+
+.grow:hover, .grow:focus {
+    transform: scale(1.10);
+}
+
+.link {
+  text-decoration: underline;
+}
