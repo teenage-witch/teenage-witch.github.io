@@ -24,6 +24,10 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  position: sticky;
+  top: 32px;
+  z-index: 10000;
+  background: transparent;
 }
 
 .resume-btn, .email-btn {
@@ -37,6 +41,7 @@ body {
   font-weight: normal;
   cursor: pointer;
 }
+
 .resume-btn {
   background: #fff6b1;
   color: #0015ff;
@@ -53,6 +58,7 @@ body {
 .hero {
   text-align: center;
   margin-bottom: 60px;
+  padding-top: 246px;
 }
 .headline {
   font-family: 'TAY Birdie', Arial, sans-serif;
@@ -162,15 +168,33 @@ body {
   line-height: 1.25rem;
 }
 
-.site-title {
+.sticky-header {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  z-index: 9999;
+  background: transparent;
+  transition: height 0.3s cubic-bezier(0.4,0,0.2,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sticky-header.shrunk {
+  height: 70px;
+}
+.logo {
   font-family: 'Libre Caslon Display', serif;
   font-weight: 400;
   font-size: 7rem;
   color: #ff6f00;
-  text-align: center;
-  padding-top: 68px;
-  margin-bottom: 80px;
   letter-spacing: 0.01em;
+  transition: font-size 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.sticky-header.shrunk .logo {
+  font-size: 2.5rem;
+  transform: scale(0.7);
 }
 
 .grid-img-container {

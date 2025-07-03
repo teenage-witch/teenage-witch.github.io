@@ -18,9 +18,11 @@
         <span>EMAIL</span>
       </div>
     </header>
+    <div class="sticky-header">
+      <div class="logo">Sabrina Majeed</div>
+    </div>
     <main>
       <section class="hero">
-        <div class="site-title">Sabrina Majeed</div>
         <div class="logo-row">
           <!-- Logo SVGs would go here if needed -->
         </div>
@@ -113,5 +115,33 @@
       </div>
     </footer>
   </div>
+  <script>
+    // Shrink sticky-header on scroll using requestAnimationFrame and a threshold
+    (function() {
+      let lastKnownScrollY = 0;
+      let ticking = false;
+      const header = document.querySelector('.sticky-header');
+      const threshold = 50;
+      function onScroll() {
+        lastKnownScrollY = window.scrollY;
+        requestTick();
+      }
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(update);
+          ticking = true;
+        }
+      }
+      function update() {
+        if (lastKnownScrollY > threshold) {
+          header.classList.add('shrunk');
+        } else {
+          header.classList.remove('shrunk');
+        }
+        ticking = false;
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+  </script>
 </body>
 </html> 
