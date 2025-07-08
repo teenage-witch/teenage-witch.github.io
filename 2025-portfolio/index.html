@@ -9,18 +9,22 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="resume-btn">
-        <img src="assets/Arrow.svg" alt="Resume Icon" class="icon">
-        <span>RESUME</span>
-      </div>
-      <div class="email-btn">
-        <img src="assets/Smiley_Default.svg" alt="Smiley Icon" class="icon">
-        <span>EMAIL</span>
-      </div>
+      <a href="assets/SabrinaMajeed_Resume2025.pdf" download class="resume-link">
+        <div class="resume-btn">
+          <img src="assets/Arrow.svg" alt="Resume Icon" class="icon icon-resume">
+          <span class="resume-text">RESUME</span>
+        </div>
+      </a>
+      <a href="mailto:sabrinaymajeed@gmail.com" class="email-link">
+        <div class="email-btn">
+          <img src="assets/Smiley_Default.svg" alt="Smiley Icon" class="icon icon-email">
+          <span>EMAIL</span>
+        </div>
+      </a>
     </header>
+    <div class="morphing-title" id="morphing-title">Sabrina Majeed</div>
     <main>
       <section class="hero">
-        <div class="site-title">Sabrina Majeed</div>
         <div class="logo-row">
           <!-- Logo SVGs would go here if needed -->
         </div>
@@ -31,13 +35,11 @@
         <div class="experience-card">
           <img src="assets/Banner.png" alt="Experience Banner">
           <div class="experience-label">COLLECTED<br>EXPERIENCE</div>
-          <svg class="experience-arrow" width="80" height="90" viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="40" y1="0" x2="40" y2="83" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="1"/>
-            <polyline points="34,75 40,83 46,75" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1"/>
-          </svg>
+          <img class="experience-arrow" src="assets/Arrow.png" alt="Arrow" width="40" height="45">
         </div>
       </section>
-      <section class="companies">
+      <section class="companies-section">
+        <div class="work-samples-note">Work Samples Coming Soon</div>
         <div class="company-row">
           <div class="company">
             <div class="grid-img-container">
@@ -55,7 +57,7 @@
             <div class="grid-img-container grid-img-square">
               <img src="assets/GitHub.png" alt="GitHub" class="grid-img grid-img-210 grid-img-github">
             </div>
-            <div class="company-label">003 - GITHUB.COM</div>
+            <div class="company-label">003 - GITHUB.COM<br><span class="company-label-dates">*MGMT</span></div>
           </div>
         </div>
         <div class="company-row">
@@ -81,13 +83,13 @@
                 <img src="assets/BuzzFeed_3.png" alt="BuzzFeed 3" class="buzzfeed-img buzzfeed-img-bottom" width="96" height="96">
               </div>
             </div>
-            <div class="company-label">006 - BUZZFEED</div>
+            <div class="company-label">006 - BUZZFEED<br><span class="company-label-dates">*MGMT</span></div>
           </div>
         </div>
         <div class="company-row">
           <div class="company">
             <div class="grid-img-container grid-img-square">
-              <img src="assets/Venmo.png" alt="Venmo" class="grid-img grid-img-210">
+              <img src="assets/Venmo.png" alt="Venmo" class="grid-img grid-img-210 grid-img-venmo">
             </div>
             <div class="company-label">007 - VENMO</div>
           </div>
@@ -101,7 +103,9 @@
             <div class="grid-img-container grid-img-intuit">
               <img src="assets/Intuit.png" alt="Intuit" class="grid-img-intuit">
             </div>
-            <div class="company-label">009 - INTUIT</div>
+            <div class="company-label">
+              009 - INTUIT
+            </div>
           </div>
         </div>
       </section>
@@ -113,5 +117,18 @@
       </div>
     </footer>
   </div>
+  <script>
+    (function() {
+      const title = document.getElementById('morphing-title');
+      const threshold = 1;
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > threshold) {
+          title.classList.add('morphed');
+        } else {
+          title.classList.remove('morphed');
+        }
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html> 

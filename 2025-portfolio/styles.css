@@ -5,6 +5,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Hangoe Text Condensed';
+  src: url('assets/fonts/HangoeTextCondensed.woff2') format('woff2'),
+       url('assets/fonts/HangoeTextCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: 'TAY Birdie', Arial, sans-serif;
@@ -25,7 +33,10 @@ body {
   align-items: center;
   margin-bottom: 40px;
 }
-
+.resume-link {
+}
+.email-link {
+}
 .resume-btn, .email-btn {
   display: flex;
   align-items: center;
@@ -53,6 +64,7 @@ body {
 .hero {
   text-align: center;
   margin-bottom: 60px;
+  padding-top: 272px;
 }
 .headline {
   font-family: 'TAY Birdie', Arial, sans-serif;
@@ -95,7 +107,9 @@ body {
   line-height: 1.1;
 }
 .experience-arrow {
-  margin-top: 18px;
+  width: 100px !important;
+  height: auto !important;
+  margin-top: 0;
   display: block;
   z-index: 2;
   position: absolute;
@@ -105,7 +119,7 @@ body {
 }
 
 .companies {
-  margin: 0 auto 60px auto;
+  margin: 0 auto 100px auto;
   max-width: 900px;
 }
 .company-row {
@@ -133,7 +147,7 @@ body {
 }
 .company-label {
   height: 28px;
-  line-height: 28px;
+  line-height: 20px;
   color: #666;
   font-size: 13px;
   text-transform: uppercase;
@@ -191,17 +205,18 @@ body {
   margin: 0 !important;
 }
 .grid-img-shopify {
-  width: 286px !important;
-  height: 222px !important;
+  width: 256px !important;
+  height: 240px !important;
   max-width: none !important;
   min-width: 0 !important;
   object-fit: contain;
   display: block;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-bottom: 0 !important;
+  position: static;
+  margin: 0 auto;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.grid-img-container:hover .grid-img-shopify {
+  transform: rotate(5deg);
 }
 .grid-img-container:hover + .company-label,
 .grid-img-container.grid-img-intuit:hover + .company-label,
@@ -288,6 +303,18 @@ body {
   object-fit: contain;
   display: block;
   margin: 0 !important;
+  transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+  transform: rotate(0deg);
+}
+.buzzfeed-img:hover {
+  animation: buzzfeed-spin 4s linear infinite;
+}
+.buzzfeed-img:not(:hover) {
+  transform: rotate(0deg);
+}
+@keyframes buzzfeed-spin {
+  100% { transform: rotate(360deg); }
 }
 .buzzfeed-row-top img:first-child {
   margin-right: 8px;
@@ -343,4 +370,169 @@ body {
   object-fit: contain;
   display: block;
   margin: 0 !important;
+}
+
+.morphing-title {
+  top: 240px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Hangoe Text Condensed', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10rem;
+  color: #ff6f00;
+  letter-spacing: 0;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  z-index: 9999;
+  text-align: center;
+  transition:
+    top 0.5s cubic-bezier(0.4,0,0.2,1),
+    left 0.5s cubic-bezier(0.4,0,0.2,1),
+    font-size 0.5s cubic-bezier(0.4,0,0.2,1),
+    background 0.5s,
+    padding 0.5s,
+    border-radius 0.5s,
+    transform 0.5s cubic-bezier(0.4,0,0.2,1);
+  white-space: nowrap;
+}
+.morphing-title.morphed {
+  top: 32px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 2.5rem;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.grid-img-container img:not(.grid-img-shopify):not(.grid-img-github):not(.grid-img-venmo):not(.buzzfeed-img) {
+  transition: transform 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+.grid-img-container:hover img:not(.grid-img-shopify):not(.grid-img-github):not(.grid-img-venmo):not(.buzzfeed-img) {
+  transform: translateY(-10px);
+}
+.grid-img-venmo {
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.grid-img-github {
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.grid-img-container:hover .grid-img-venmo {
+  transform: rotate(-20deg);
+}
+.grid-img-container:hover .grid-img-github {
+  transform: rotate(20deg);
 } 
+
+.company-label-dates {
+  color: #adadad;
+  display: block;
+  margin-top: 0;
+} 
+
+.work-samples-note {
+  color: #adadad;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-samples-asterisk {
+  font-size: 18px;
+  margin: 0 8px;
+} 
+
+.resume-text {
+  text-decoration: none;
+}
+
+.resume-link {
+  text-decoration: none;
+}
+
+.email-btn:hover .icon-email {
+  content: url('assets/Smiley_Hover.svg');
+}
+
+.icon-resume {
+  transition: transform 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+.resume-btn:hover .icon-resume {
+  transform: translateY(3px);
+}
+
+@media (max-width: 600px) {
+  .company-row {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    margin: 0 auto 30px auto;
+  }
+  .company {
+    width: 100%;
+    min-height: unset;
+    margin-bottom: 32px;
+  }
+  .company:last-child {
+    margin-bottom: 0;
+  }
+  .grid-img-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 8px auto;
+  }
+  .company-label {
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+  }
+  .grid-img-container img,
+  .grid-img-shopify,
+  .grid-img-github,
+  .grid-img-venmo,
+  .buzzfeed-img {
+    transform: scale(1.15);
+  }
+  .icon-resume {
+    content: url('assets/Mobile_Resume_Icon.svg');
+  }
+  .icon-email {
+    content: url('assets/Mobile_Mail_Icon.svg');
+  }
+  .resume-btn span,
+  .email-btn span {
+    display: none;
+  }
+  .resume-btn,
+  .email-btn {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .morphing-title {
+    top: 200px;
+    font-size: 5.5rem;
+    max-width: 98vw;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+  .header {
+  }
+  .resume-link, .email-link {
+  }
+  .resume-btn, .email-btn {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.work-samples-asterisk { display: none; } 
