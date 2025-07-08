@@ -1,10 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabrina Majeed Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="assets/SabrinaMajeed_Resume2025.pdf" download class="resume-link">
+        <div class="resume-btn">
+          <img src="assets/Arrow.svg" alt="Resume Icon" class="icon icon-resume">
+          <span class="resume-text">RESUME</span>
+        </div>
+      </a>
+      <a href="mailto:sabrinaymajeed@gmail.com" class="email-link">
+        <div class="email-btn">
+          <img src="assets/Smiley_Default.svg" alt="Smiley Icon" class="icon icon-email">
+          <span>EMAIL</span>
+        </div>
+      </a>
     </header>
     <div class="morphing-title" id="morphing-title">Sabrina Majeed</div>
     <main>
+      <section class="hero">
+        <div class="logo-row">
+          <!-- Logo SVGs would go here if needed -->
+        </div>
+        <h1 class="headline">
+          15+ years crafting digital experiences you know and love,<br>
+          and leading the product design teams behind them.
+        </h1>
+        <div class="experience-card">
+          <img src="assets/Banner.png" alt="Experience Banner">
+          <div class="experience-label">COLLECTED<br>EXPERIENCE</div>
+          <img class="experience-arrow" src="assets/Arrow.png" alt="Arrow" width="40" height="45">
+        </div>
+      </section>
+      <section class="companies-section">
+        <div class="work-samples-note">Work Samples Coming Soon</div>
+        <div class="company-row">
+          <div class="company">
+            <div class="grid-img-container">
+              <img src="assets/Shopify.png" alt="Shopify" class="grid-img-shopify">
+            </div>
+            <div class="company-label">001 - SHOPIFY RETAIL</div>
+          </div>
+          <div class="company">
+            <div class="grid-img-container grid-img-square">
+              <img src="assets/Shop.png" alt="Shop" class="grid-img">
+            </div>
+            <div class="company-label">002 - SHOP PAY</div>
+          </div>
+          <div class="company">
+            <div class="grid-img-container grid-img-square">
+              <img src="assets/GitHub.png" alt="GitHub" class="grid-img grid-img-210 grid-img-github">
+            </div>
+            <div class="company-label">003 - GITHUB.COM<br><span class="company-label-dates">*MGMT</span></div>
+          </div>
+        </div>
+        <div class="company-row">
+          <div class="company">
+            <div class="grid-img-container grid-img-square">
+              <img src="assets/InnBox.png" alt="TheInnbox" class="grid-img grid-img-innbox">
+            </div>
+            <div class="company-label">004 - THE INNBOX</div>
+          </div>
+          <div class="company">
+            <div class="grid-img-container grid-img-eaten">
+              <img src="assets/Eaten.png" alt="Eaten" class="grid-img-eaten-img">
+            </div>
+            <div class="company-label">005 - EATEN</div>
+          </div>
+          <div class="company">
+            <div class="grid-img-container grid-img-square buzzfeed-container">
+              <div class="buzzfeed-row buzzfeed-row-top">
+                <img src="assets/BuzzFeed_1.png" alt="BuzzFeed 1" class="buzzfeed-img">
+                <img src="assets/BuzzFeed_2.png" alt="BuzzFeed 2" class="buzzfeed-img">
+              </div>
+              <div class="buzzfeed-row buzzfeed-row-bottom">
+                <img src="assets/BuzzFeed_3.png" alt="BuzzFeed 3" class="buzzfeed-img buzzfeed-img-bottom" width="96" height="96">
+              </div>
+            </div>
+            <div class="company-label">006 - BUZZFEED<br><span class="company-label-dates">*MGMT</span></div>
+          </div>
+        </div>
+        <div class="company-row">
+          <div class="company">
+            <div class="grid-img-container grid-img-square">
+              <img src="assets/Venmo.png" alt="Venmo" class="grid-img grid-img-210 grid-img-venmo">
+            </div>
+            <div class="company-label">007 - VENMO</div>
+          </div>
+          <div class="company">
+            <div class="grid-img-container grid-img-square">
+              <img src="assets/Miso.png" alt="Miso" class="grid-img">
+            </div>
+            <div class="company-label">008 - MISO</div>
+          </div>
+          <div class="company">
+            <div class="grid-img-container grid-img-intuit">
+              <img src="assets/Intuit.png" alt="Intuit" class="grid-img-intuit">
+            </div>
+            <div class="company-label">
+              009 - INTUIT
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-text">
+        MADE WITH A CONCOCTION OF GPT IMAGE 1, FIGMA MAKE, CURSOR<br>
+        LAST UPDATED JULY 2025
+      </div>
+    </footer>
+  </div>
   <script>
     (function() {
       const title = document.getElementById('morphing-title');
-      const threshold = 300;
+      const threshold = 1;
       window.addEventListener('scroll', function() {
         if (window.scrollY > threshold) {
           title.classList.add('morphed');
@@ -13,4 +129,6 @@
         }
       }, { passive: true });
     })();
-  </script> 
+  </script>
+</body>
+</html> 
