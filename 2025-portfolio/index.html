@@ -22,7 +22,13 @@
         </div>
       </a>
     </header>
+<<<<<<< HEAD
     <div class="morphing-title" id="morphing-title">Sabrina Majeed</div>
+=======
+    <div class="sticky-header">
+      <div class="logo">Sabrina Majeed</div>
+    </div>
+>>>>>>> d3027951294a6bcc4d04fc082409b6e3663aba13
     <main>
       <section class="hero">
         <div class="logo-row">
@@ -118,6 +124,7 @@
     </footer>
   </div>
   <script>
+<<<<<<< HEAD
     (function() {
       const title = document.getElementById('morphing-title');
       const threshold = 1;
@@ -128,6 +135,33 @@
           title.classList.remove('morphed');
         }
       }, { passive: true });
+=======
+    // Shrink sticky-header on scroll using requestAnimationFrame and a threshold
+    (function() {
+      let lastKnownScrollY = 0;
+      let ticking = false;
+      const header = document.querySelector('.sticky-header');
+      const threshold = 50;
+      function onScroll() {
+        lastKnownScrollY = window.scrollY;
+        requestTick();
+      }
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(update);
+          ticking = true;
+        }
+      }
+      function update() {
+        if (lastKnownScrollY > threshold) {
+          header.classList.add('shrunk');
+        } else {
+          header.classList.remove('shrunk');
+        }
+        ticking = false;
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+>>>>>>> d3027951294a6bcc4d04fc082409b6e3663aba13
     })();
   </script>
 </body>
