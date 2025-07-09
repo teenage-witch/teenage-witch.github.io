@@ -7,8 +7,8 @@
 
 @font-face {
   font-family: 'Hangoe Text Condensed';
-  src: url('assets/fonts/HangoeTextCondensed.woff2') format('woff2'),
-       url('assets/fonts/HangoeTextCondensed.woff') format('woff');
+  src: url('assets/fonts/hangoe-text_condensed-webfont.woff2') format('woff2'),
+       url('assets/fonts/hangoe-text_condensed-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
